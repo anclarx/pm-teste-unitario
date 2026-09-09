@@ -127,6 +127,7 @@ public class Hora {
         sobraMinutos = minutos % 60;
 
         novasHoras = horas + horasAMais;
+        novasHoras = novasHoras % 24;
 
         return new Hora(novasHoras, sobraMinutos, segundos);
     }
